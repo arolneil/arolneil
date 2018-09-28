@@ -14,8 +14,16 @@ public class JavaApplication1 {
     /**
      * @param args the command line arguments
      */
-    public static void main(String[] args) {
-        // TODO code application logic here
+    public static  int pow(double base, int exponent) {
+        int total = 1;
+        for(int a = 1; a<= exponent; a++){
+        total *=base;
     }
-    
+        return total;
+    }
+    public static void main(String[] args) {
+        int temp = pow(2,3);
+        System.out.println(temp);
+}
+
 }
